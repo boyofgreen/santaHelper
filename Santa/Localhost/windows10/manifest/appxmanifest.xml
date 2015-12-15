@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build"
+IgnorableNamespaces="uap mp build"> 
+	<Identity Name="INSERT-YOUR-PACKAGE-IDENTITY-NAME-HERE" Publisher="CN=INSERT-YOUR-PACKAGE-IDENTITY-PUBLISHER-HERE" Version="1.0.0.0" ProcessorArchitecture="neutral" /> 
+	<mp:PhoneIdentity PhoneProductId="0d684aee-49f4-9375-6e9e-e47546b4d832" PhonePublisherId="00000000-0000-0000-0000-000000000000"/> 
+
+	<build:Metadata>
+		<build:Item Name ="ManifoldJSVersion" Value ="0.4.3" />
+		<build:Item Name ="GeneratedFrom" Value ="CLI" />
+		<build:Item Name ="GenerationDate" Value ="2015-12-13 22:55:18 Z" />
+	</build:Metadata>
+
+	<Properties> 
+		<DisplayName>Localhost</DisplayName> 
+    <PublisherDisplayName>INSERT-YOUR-PACKAGE-PROPERTIES-PUBLISHERDISPLAYNAME-HERE</PublisherDisplayName>
+    <Logo>images\storelogo.scale-100.png</Logo> 
+	</Properties> 
+
+	<Dependencies> 
+		<TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" /> 
+	</Dependencies> 
+
+	<Resources>
+	<Resource Language="en-us" /> 
+	 </Resources> 
+
+	<Applications> 
+		<Application Id="Localhost" StartPage="http://localhost:58603/"> 
+			<uap:VisualElements 
+				DisplayName="Localhost" 
+				Square150x150Logo="images\logo.scale-100.png" 
+				Square44x44Logo="images\smalllogo.scale-100.png" 
+				Description="Localhost"	
+				BackgroundColor="blue"> 
+				<uap:SplashScreen Image="images\splashscreen.scale-100.png" /> 
+				<uap:InitialRotationPreference> 
+					<uap:Rotation Preference="portrait" /> 
+				</uap:InitialRotationPreference> 
+			</uap:VisualElements> 
+			<uap:ApplicationContentUriRules>
+				
+				<uap:Rule Type="include" WindowsRuntimeAccess="none" Match="http://localhost:58603/" />
+			</uap:ApplicationContentUriRules>
+		</Application> 
+	</Applications> 
+
+	<Capabilities>
+		<Capability Name="internetClient" />
+		<Capability Name="privateNetworkClientServer" />
+	</Capabilities>
+
+</Package>

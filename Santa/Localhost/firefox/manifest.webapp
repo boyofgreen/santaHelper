@@ -1,0 +1,8 @@
+{
+    "name": "Localhost",
+    "description": "Content from http://localhost:58603/",
+    "launch_path": "/",
+    "icons": {
+        "128": "icon128.png"
+    }
+}

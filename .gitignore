@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Santa/Localhost/windows10/source/bld/Debug
+/Santa/Localhost/windows10/source/bin/Debug
+/WebApplication1/packages
+/WebApplication1/WebApplication1/bin
+/WebApplication1/WebApplication1/obj/Debug
